@@ -62,7 +62,7 @@ def fetch_config(book_id: str, session: requests.Session) -> str:
 def extract_pages(config_js: str) -> list[str]:
     hashes = PAGE_REGEX.findall(config_js)
     if not hashes:
-        raise RuntimeError("No pages found in config.js — layout may have changed.")
+        raise RuntimeError("No pages found in config.js - layout may have changed.")
     return hashes
 
 

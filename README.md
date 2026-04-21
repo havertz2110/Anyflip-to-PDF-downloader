@@ -4,7 +4,7 @@
 
 Download a public [AnyFlip](https://anyflip.com) flipbook to a single PDF from the command line.
 
-This tool does not bypass passwords or break DRM — it only automates fetching the page images that your browser can already render for you.
+This tool does not bypass passwords or break DRM - it only automates fetching the page images that your browser can already render for you.
 
 > **Scope:** Works with public books only (URLs ending in `/basic` or similar). Password-protected / DRM-locked books are not supported. Please respect the copyright of authors and publishers.
 
@@ -12,19 +12,19 @@ This tool does not bypass passwords or break DRM — it only automates fetching 
 
 ## 🖥️ For non-technical users (Windows)
 
-### Step 1 — Install Python
+### Step 1 - Install Python
 
 1. Go to https://www.python.org/downloads/ and click the big yellow **Download Python** button (version 3.10 or newer).
 2. Run the installer. **On the first screen, tick the `Add Python to PATH` checkbox**, then click **Install Now**.
 3. Wait for it to finish, then click **Close**.
 
-### Step 2 — Get this tool
+### Step 2 - Get this tool
 
 1. Open the [GitHub page for this repo](https://github.com/havertz2110/Anyflip-to-PDF-downloader).
 2. Click the green **Code** button → **Download ZIP**.
 3. Extract the ZIP to your Desktop (e.g. `C:\Users\<your-name>\Desktop\Anyflip-to-PDF-downloader-main`).
 
-### Step 3 — Install the required libraries
+### Step 3 - Install the required libraries
 
 1. Press `Win + R`, type `cmd`, press Enter to open Command Prompt.
 2. Type the following line and press Enter (copy-paste works):
@@ -33,7 +33,7 @@ This tool does not bypass passwords or break DRM — it only automates fetching 
    ```
 3. Wait until you see `Successfully installed …`.
 
-### Step 4 — Download a book
+### Step 4 - Download a book
 
 1. In the same Command Prompt, `cd` into the extracted folder:
    ```
@@ -102,7 +102,7 @@ python anyflip_to_pdf.py sdffp/ieyn
    `https://online.anyflip.com/<code>/<book>/files/large/<md5>.webp`,
    then uses [Pillow](https://pillow.readthedocs.io) to assemble all pages into a single PDF.
 
-No cookies, tokens, or login are needed — the content is already public.
+No cookies, tokens, or login are needed - the content is already public.
 
 ---
 
@@ -118,7 +118,7 @@ Downloading a public web page by itself is not a technical offence, but **redist
 You didn't tick **Add Python to PATH** during Python install. Quickest fix: uninstall Python and reinstall with the checkbox ticked. Alternatively, run `py -m pip install requests pillow` instead of `pip install …`.
 
 **Q: Download fails halfway through?**
-Re-run the same command — the script skips pages already downloaded and only fetches the missing ones (temporary `.webp` files live in the `pages/` directory).
+Re-run the same command - the script skips pages already downloaded and only fetches the missing ones (temporary `.webp` files live in the `pages/` directory).
 
 **Q: What about image quality?**
 The script grabs the `large` variant (the highest-quality version the AnyFlip viewer itself serves). Quality is usually good enough for reading but not as sharp as a publisher's original source file.
@@ -127,4 +127,4 @@ The script grabs the `large` variant (the highest-quality version the AnyFlip vi
 
 ## 📜 License
 
-[MIT License](LICENSE) — free to use for personal, educational, and other lawful purposes.
+[MIT License](LICENSE) - free to use for personal, educational, and other lawful purposes.
